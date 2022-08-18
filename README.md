@@ -1,6 +1,6 @@
 # Ethereum Solidity Smart Contract Analysis
 首先通过Google BigQuery沙盒获取合约地址（交易量Top20以及交易量超过8000的ERC20和ERC721合约）；
-其次通过py-etherscan-api在etherscan上爬取上述合约地址对应的合约源码（仅爬取solidity合约）。
+其次通过[py-etherscan-api](https://github.com/corpetty/py-etherscan-api)在[etherscan](https://etherscan.io/)上爬取上述合约地址对应的合约源码（仅爬取solidity合约）。
 ## 1 BigQuery查询合约地址
 使用[Google BigQuery沙盒](https://console.cloud.google.com/projectselector2/bigquery?supportedpurview=project)，创建项目，搜索数据集
 ![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2022/png/65956335/1660791565785-f2e69282-b155-4969-9069-a46bdb94a30f.png#clientId=u211cdba8-7d95-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=542&id=u9bdf638e&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1084&originWidth=2210&originalType=binary&ratio=1&rotation=0&showTitle=false&size=199901&status=done&style=none&taskId=u7fdd2fec-f660-4d10-ab7a-32b847a1d17&title=&width=1105)
