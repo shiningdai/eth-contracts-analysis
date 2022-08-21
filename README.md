@@ -69,8 +69,10 @@ LIMIT 20
 
 提取到的合约源码存放到contracts\source-code路径下，具体存放路径和命名规则与上述json文件类似，只是将文件后缀改为'.sol'。
 
-## 3 分析合约
+其中，几个v0.8.x版本下的几笔ERC721交易涉及到多个合约间的调用，这部分合约单独将他们放在了contracts\v0.8.x目录下，并解析出了交易地址涉及到的每个合约，以地址为目录名，解析出的合约放在该目录下，解析合约的脚本：analysis\scripts-win\parse_sourcecode_v8_3.py
 
+## 3 分析合约
+TODO:
 
 ## Reference
 [TxAnalysis](https://github.com/JolyonJian/tx-analysis.git)
