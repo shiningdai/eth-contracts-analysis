@@ -3,12 +3,15 @@ pragma solidity ^0.8.0;
 // Fibonacci sequence test
 contract FibonacciSeq {
     uint public expecctedNum;
+    uint public finalFib;
     uint fib1 = 0;
     uint fib2 = 1;
-    uint public finalFib;
 
     function setFibonacci(uint n) public {
         expecctedNum = n;
+    }
+    function getFibonacci() public view returns (uint){
+        return expecctedNum;
     }
 
     function fibonacci() public returns (uint) {
@@ -50,6 +53,9 @@ contract FibonacciSeq {
         return finalFib;
     }
 
+    function setFinalFibonacci() public {
+        finalFib = 0;
+    }
     function getFinalFibonacci() public view returns (uint) {
         return finalFib;
     }
