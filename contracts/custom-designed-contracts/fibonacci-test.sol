@@ -45,12 +45,12 @@ contract FibonacciSeq {
         uint _fib2 = 1;
         uint _finalFib = finalFib;
         for (_idx = 2; _idx < _expecctedNum; _idx++) {
-            _finalFib = _fib1 + _fib1;
+            _finalFib = _fib1 + _fib2;
             _fib1 = _fib2;
             _fib2 = _finalFib;
         }
         finalFib = _finalFib;
-        return finalFib;
+        return _finalFib;
     }
 
     function setFinalFibonacci() public {
