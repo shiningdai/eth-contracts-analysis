@@ -1,0 +1,893 @@
+    /* "test_contracts/fibonacci-test.sol":55:1548  contract FibonacciSeq {... */
+  mstore(0x40, 0x80)
+    /* "test_contracts/fibonacci-test.sol":154:155  0 */
+  0x00
+    /* "test_contracts/fibonacci-test.sol":142:155  uint fib1 = 0 */
+  0x02
+  sstore
+    /* "test_contracts/fibonacci-test.sol":174:175  1 */
+  0x01
+    /* "test_contracts/fibonacci-test.sol":162:175  uint fib2 = 1 */
+  0x03
+  sstore
+    /* "test_contracts/fibonacci-test.sol":55:1548  contract FibonacciSeq {... */
+  callvalue
+  dup1
+  iszero
+  tag_1
+  jumpi
+  0x00
+  dup1
+  revert
+tag_1:
+  pop
+  dataSize(sub_0)
+  dup1
+  dataOffset(sub_0)
+  0x00
+  codecopy
+  0x00
+  return
+stop
+
+sub_0: assembly {
+        /* "test_contracts/fibonacci-test.sol":55:1548  contract FibonacciSeq {... */
+      mstore(0x40, 0x80)
+      callvalue
+      dup1
+      iszero
+      tag_1
+      jumpi
+      0x00
+      dup1
+      revert
+    tag_1:
+      pop
+      jumpi(tag_2, lt(calldatasize, 0x04))
+      shr(0xe0, calldataload(0x00))
+      dup1
+      0xba046f02
+      gt
+      tag_11
+      jumpi
+      dup1
+      0xba046f02
+      eq
+      tag_7
+      jumpi
+      dup1
+      0xe655e4bf
+      eq
+      tag_8
+      jumpi
+      dup1
+      0xe9b19170
+      eq
+      tag_9
+      jumpi
+      dup1
+      0xfe75faab
+      eq
+      tag_10
+      jumpi
+      jump(tag_2)
+    tag_11:
+      dup1
+      0x3e6c4812
+      eq
+      tag_3
+      jumpi
+      dup1
+      0x685b2487
+      eq
+      tag_4
+      jumpi
+      dup1
+      0xad95e410
+      eq
+      tag_5
+      jumpi
+      dup1
+      0xb837d3c5
+      eq
+      tag_6
+      jumpi
+    tag_2:
+      0x00
+      dup1
+      revert
+        /* "test_contracts/fibonacci-test.sol":1455:1545  function getFinalFibonacci() public view returns (uint) {... */
+    tag_3:
+      tag_12
+      tag_13
+      jump	// in
+    tag_12:
+      mload(0x40)
+      tag_14
+      swap2
+      swap1
+      tag_15
+      jump	// in
+    tag_14:
+      mload(0x40)
+      dup1
+      swap2
+      sub
+      swap1
+      return
+        /* "test_contracts/fibonacci-test.sol":1382:1449  function setFinalFibonacci() public {... */
+    tag_4:
+      tag_16
+      tag_17
+      jump	// in
+    tag_16:
+      stop
+        /* "test_contracts/fibonacci-test.sol":84:108  uint public expecctedNum */
+    tag_5:
+      tag_18
+      tag_19
+      jump	// in
+    tag_18:
+      mload(0x40)
+      tag_20
+      swap2
+      swap1
+      tag_15
+      jump	// in
+    tag_20:
+      mload(0x40)
+      dup1
+      swap2
+      sub
+      swap1
+      return
+        /* "test_contracts/fibonacci-test.sol":115:135  uint public finalFib */
+    tag_6:
+      tag_21
+      tag_22
+      jump	// in
+    tag_21:
+      mload(0x40)
+      tag_23
+      swap2
+      swap1
+      tag_15
+      jump	// in
+    tag_23:
+      mload(0x40)
+      dup1
+      swap2
+      sub
+      swap1
+      return
+        /* "test_contracts/fibonacci-test.sol":800:1374  function fibonacci_light() public returns (uint) {... */
+    tag_7:
+      tag_24
+      tag_25
+      jump	// in
+    tag_24:
+      mload(0x40)
+      tag_26
+      swap2
+      swap1
+      tag_15
+      jump	// in
+    tag_26:
+      mload(0x40)
+      dup1
+      swap2
+      sub
+      swap1
+      return
+        /* "test_contracts/fibonacci-test.sol":358:792  function fibonacci() public returns (uint) {... */
+    tag_8:
+      tag_27
+      tag_28
+      jump	// in
+    tag_27:
+      mload(0x40)
+      tag_29
+      swap2
+      swap1
+      tag_15
+      jump	// in
+    tag_29:
+      mload(0x40)
+      dup1
+      swap2
+      sub
+      swap1
+      return
+        /* "test_contracts/fibonacci-test.sol":262:350  function getFibonacci() public view returns (uint){... */
+    tag_9:
+      tag_30
+      tag_31
+      jump	// in
+    tag_30:
+      mload(0x40)
+      tag_32
+      swap2
+      swap1
+      tag_15
+      jump	// in
+    tag_32:
+      mload(0x40)
+      dup1
+      swap2
+      sub
+      swap1
+      return
+        /* "test_contracts/fibonacci-test.sol":184:256  function setFibonacci(uint n) public {... */
+    tag_10:
+      tag_33
+      0x04
+      dup1
+      calldatasize
+      sub
+      dup2
+      add
+      swap1
+      tag_34
+      swap2
+      swap1
+      tag_35
+      jump	// in
+    tag_34:
+      tag_36
+      jump	// in
+    tag_33:
+      stop
+        /* "test_contracts/fibonacci-test.sol":1455:1545  function getFinalFibonacci() public view returns (uint) {... */
+    tag_13:
+        /* "test_contracts/fibonacci-test.sol":1505:1509  uint */
+      0x00
+        /* "test_contracts/fibonacci-test.sol":1529:1537  finalFib */
+      sload(0x01)
+        /* "test_contracts/fibonacci-test.sol":1522:1537  return finalFib */
+      swap1
+      pop
+        /* "test_contracts/fibonacci-test.sol":1455:1545  function getFinalFibonacci() public view returns (uint) {... */
+      swap1
+      jump	// out
+        /* "test_contracts/fibonacci-test.sol":1382:1449  function setFinalFibonacci() public {... */
+    tag_17:
+        /* "test_contracts/fibonacci-test.sol":1440:1441  0 */
+      0x00
+        /* "test_contracts/fibonacci-test.sol":1429:1437  finalFib */
+      0x01
+        /* "test_contracts/fibonacci-test.sol":1429:1441  finalFib = 0 */
+      dup2
+      swap1
+      sstore
+      pop
+        /* "test_contracts/fibonacci-test.sol":1382:1449  function setFinalFibonacci() public {... */
+      jump	// out
+        /* "test_contracts/fibonacci-test.sol":84:108  uint public expecctedNum */
+    tag_19:
+      sload(0x00)
+      dup2
+      jump	// out
+        /* "test_contracts/fibonacci-test.sol":115:135  uint public finalFib */
+    tag_22:
+      sload(0x01)
+      dup2
+      jump	// out
+        /* "test_contracts/fibonacci-test.sol":800:1374  function fibonacci_light() public returns (uint) {... */
+    tag_25:
+        /* "test_contracts/fibonacci-test.sol":843:847  uint */
+      0x00
+        /* "test_contracts/fibonacci-test.sol":860:878  uint _expecctedNum */
+      dup1
+        /* "test_contracts/fibonacci-test.sol":881:893  expecctedNum */
+      sload(0x00)
+        /* "test_contracts/fibonacci-test.sol":860:893  uint _expecctedNum = expecctedNum */
+      swap1
+      pop
+        /* "test_contracts/fibonacci-test.sol":925:926  0 */
+      0x00
+        /* "test_contracts/fibonacci-test.sol":908:921  _expecctedNum */
+      dup2
+        /* "test_contracts/fibonacci-test.sol":908:926  _expecctedNum == 0 */
+      sub
+        /* "test_contracts/fibonacci-test.sol":904:963  if (_expecctedNum == 0) {... */
+      tag_40
+      jumpi
+        /* "test_contracts/fibonacci-test.sol":950:951  0 */
+      0x00
+        /* "test_contracts/fibonacci-test.sol":943:951  return 0 */
+      swap2
+      pop
+      pop
+      jump(tag_39)
+        /* "test_contracts/fibonacci-test.sol":904:963  if (_expecctedNum == 0) {... */
+    tag_40:
+        /* "test_contracts/fibonacci-test.sol":994:995  1 */
+      0x01
+        /* "test_contracts/fibonacci-test.sol":977:990  _expecctedNum */
+      dup2
+        /* "test_contracts/fibonacci-test.sol":977:995  _expecctedNum == 1 */
+      sub
+        /* "test_contracts/fibonacci-test.sol":973:1032  if (_expecctedNum == 1) {... */
+      tag_41
+      jumpi
+        /* "test_contracts/fibonacci-test.sol":1019:1020  1 */
+      0x01
+        /* "test_contracts/fibonacci-test.sol":1012:1020  return 1 */
+      swap2
+      pop
+      pop
+      jump(tag_39)
+        /* "test_contracts/fibonacci-test.sol":973:1032  if (_expecctedNum == 1) {... */
+    tag_41:
+        /* "test_contracts/fibonacci-test.sol":1042:1051  uint _idx */
+      0x00
+        /* "test_contracts/fibonacci-test.sol":1054:1055  2 */
+      0x02
+        /* "test_contracts/fibonacci-test.sol":1042:1055  uint _idx = 2 */
+      swap1
+      pop
+        /* "test_contracts/fibonacci-test.sol":1066:1076  uint _fib1 */
+      0x00
+        /* "test_contracts/fibonacci-test.sol":1091:1101  uint _fib2 */
+      dup1
+        /* "test_contracts/fibonacci-test.sol":1104:1105  1 */
+      0x01
+        /* "test_contracts/fibonacci-test.sol":1091:1105  uint _fib2 = 1 */
+      swap1
+      pop
+        /* "test_contracts/fibonacci-test.sol":1116:1130  uint _finalFib */
+      0x00
+        /* "test_contracts/fibonacci-test.sol":1133:1141  finalFib */
+      sload(0x01)
+        /* "test_contracts/fibonacci-test.sol":1116:1141  uint _finalFib = finalFib */
+      swap1
+      pop
+        /* "test_contracts/fibonacci-test.sol":1164:1165  2 */
+      0x02
+        /* "test_contracts/fibonacci-test.sol":1157:1165  _idx = 2 */
+      swap4
+      pop
+        /* "test_contracts/fibonacci-test.sol":1152:1309  for (_idx = 2; _idx < _expecctedNum; _idx++) {... */
+    tag_42:
+        /* "test_contracts/fibonacci-test.sol":1174:1187  _expecctedNum */
+      dup5
+        /* "test_contracts/fibonacci-test.sol":1167:1171  _idx */
+      dup5
+        /* "test_contracts/fibonacci-test.sol":1167:1187  _idx < _expecctedNum */
+      lt
+        /* "test_contracts/fibonacci-test.sol":1152:1309  for (_idx = 2; _idx < _expecctedNum; _idx++) {... */
+      iszero
+      tag_43
+      jumpi
+        /* "test_contracts/fibonacci-test.sol":1232:1237  _fib2 */
+      dup2
+        /* "test_contracts/fibonacci-test.sol":1224:1229  _fib1 */
+      dup4
+        /* "test_contracts/fibonacci-test.sol":1224:1237  _fib1 + _fib2 */
+      tag_45
+      swap2
+      swap1
+      tag_46
+      jump	// in
+    tag_45:
+        /* "test_contracts/fibonacci-test.sol":1212:1237  _finalFib = _fib1 + _fib2 */
+      swap1
+      pop
+        /* "test_contracts/fibonacci-test.sol":1260:1265  _fib2 */
+      dup2
+        /* "test_contracts/fibonacci-test.sol":1252:1265  _fib1 = _fib2 */
+      swap3
+      pop
+        /* "test_contracts/fibonacci-test.sol":1288:1297  _finalFib */
+      dup1
+        /* "test_contracts/fibonacci-test.sol":1280:1297  _fib2 = _finalFib */
+      swap2
+      pop
+        /* "test_contracts/fibonacci-test.sol":1189:1195  _idx++ */
+      dup4
+      dup1
+      tag_47
+      swap1
+      tag_48
+      jump	// in
+    tag_47:
+      swap5
+      pop
+      pop
+        /* "test_contracts/fibonacci-test.sol":1152:1309  for (_idx = 2; _idx < _expecctedNum; _idx++) {... */
+      jump(tag_42)
+    tag_43:
+        /* "test_contracts/fibonacci-test.sol":1330:1339  _finalFib */
+      dup1
+        /* "test_contracts/fibonacci-test.sol":1319:1327  finalFib */
+      0x01
+        /* "test_contracts/fibonacci-test.sol":1319:1339  finalFib = _finalFib */
+      dup2
+      swap1
+      sstore
+      pop
+        /* "test_contracts/fibonacci-test.sol":1357:1366  _finalFib */
+      dup1
+        /* "test_contracts/fibonacci-test.sol":1350:1366  return _finalFib */
+      swap6
+      pop
+      pop
+      pop
+      pop
+      pop
+      pop
+        /* "test_contracts/fibonacci-test.sol":800:1374  function fibonacci_light() public returns (uint) {... */
+    tag_39:
+      swap1
+      jump	// out
+        /* "test_contracts/fibonacci-test.sol":358:792  function fibonacci() public returns (uint) {... */
+    tag_28:
+        /* "test_contracts/fibonacci-test.sol":395:399  uint */
+      0x00
+        /* "test_contracts/fibonacci-test.sol":432:433  0 */
+      dup1
+        /* "test_contracts/fibonacci-test.sol":416:428  expecctedNum */
+      sload(0x00)
+        /* "test_contracts/fibonacci-test.sol":416:433  expecctedNum == 0 */
+      sub
+        /* "test_contracts/fibonacci-test.sol":412:470  if (expecctedNum == 0) {... */
+      tag_50
+      jumpi
+        /* "test_contracts/fibonacci-test.sol":457:458  0 */
+      0x00
+        /* "test_contracts/fibonacci-test.sol":450:458  return 0 */
+      swap1
+      pop
+      jump(tag_49)
+        /* "test_contracts/fibonacci-test.sol":412:470  if (expecctedNum == 0) {... */
+    tag_50:
+        /* "test_contracts/fibonacci-test.sol":500:501  1 */
+      0x01
+        /* "test_contracts/fibonacci-test.sol":484:496  expecctedNum */
+      sload(0x00)
+        /* "test_contracts/fibonacci-test.sol":484:501  expecctedNum == 1 */
+      sub
+        /* "test_contracts/fibonacci-test.sol":480:538  if (expecctedNum == 1) {... */
+      tag_51
+      jumpi
+        /* "test_contracts/fibonacci-test.sol":525:526  1 */
+      0x01
+        /* "test_contracts/fibonacci-test.sol":518:526  return 1 */
+      swap1
+      pop
+      jump(tag_49)
+        /* "test_contracts/fibonacci-test.sol":480:538  if (expecctedNum == 1) {... */
+    tag_51:
+        /* "test_contracts/fibonacci-test.sol":548:557  uint _idx */
+      0x00
+        /* "test_contracts/fibonacci-test.sol":560:561  2 */
+      0x02
+        /* "test_contracts/fibonacci-test.sol":548:561  uint _idx = 2 */
+      swap1
+      pop
+        /* "test_contracts/fibonacci-test.sol":579:580  0 */
+      0x00
+        /* "test_contracts/fibonacci-test.sol":572:576  fib1 */
+      0x02
+        /* "test_contracts/fibonacci-test.sol":572:580  fib1 = 0 */
+      dup2
+      swap1
+      sstore
+      pop
+        /* "test_contracts/fibonacci-test.sol":598:599  1 */
+      0x01
+        /* "test_contracts/fibonacci-test.sol":591:595  fib2 */
+      0x03
+        /* "test_contracts/fibonacci-test.sol":591:599  fib2 = 1 */
+      dup2
+      swap1
+      sstore
+      pop
+        /* "test_contracts/fibonacci-test.sol":622:623  2 */
+      0x02
+        /* "test_contracts/fibonacci-test.sol":615:623  _idx = 2 */
+      swap1
+      pop
+        /* "test_contracts/fibonacci-test.sol":610:759  for (_idx = 2; _idx < expecctedNum; _idx++) {... */
+    tag_52:
+        /* "test_contracts/fibonacci-test.sol":632:644  expecctedNum */
+      sload(0x00)
+        /* "test_contracts/fibonacci-test.sol":625:629  _idx */
+      dup2
+        /* "test_contracts/fibonacci-test.sol":625:644  _idx < expecctedNum */
+      lt
+        /* "test_contracts/fibonacci-test.sol":610:759  for (_idx = 2; _idx < expecctedNum; _idx++) {... */
+      iszero
+      tag_53
+      jumpi
+        /* "test_contracts/fibonacci-test.sol":687:691  fib2 */
+      sload(0x03)
+        /* "test_contracts/fibonacci-test.sol":680:684  fib1 */
+      sload(0x02)
+        /* "test_contracts/fibonacci-test.sol":680:691  fib1 + fib2 */
+      tag_55
+      swap2
+      swap1
+      tag_46
+      jump	// in
+    tag_55:
+        /* "test_contracts/fibonacci-test.sol":669:677  finalFib */
+      0x01
+        /* "test_contracts/fibonacci-test.sol":669:691  finalFib = fib1 + fib2 */
+      dup2
+      swap1
+      sstore
+      pop
+        /* "test_contracts/fibonacci-test.sol":713:717  fib2 */
+      sload(0x03)
+        /* "test_contracts/fibonacci-test.sol":706:710  fib1 */
+      0x02
+        /* "test_contracts/fibonacci-test.sol":706:717  fib1 = fib2 */
+      dup2
+      swap1
+      sstore
+      pop
+        /* "test_contracts/fibonacci-test.sol":739:747  finalFib */
+      sload(0x01)
+        /* "test_contracts/fibonacci-test.sol":732:736  fib2 */
+      0x03
+        /* "test_contracts/fibonacci-test.sol":732:747  fib2 = finalFib */
+      dup2
+      swap1
+      sstore
+      pop
+        /* "test_contracts/fibonacci-test.sol":646:652  _idx++ */
+      dup1
+      dup1
+      tag_56
+      swap1
+      tag_48
+      jump	// in
+    tag_56:
+      swap2
+      pop
+      pop
+        /* "test_contracts/fibonacci-test.sol":610:759  for (_idx = 2; _idx < expecctedNum; _idx++) {... */
+      jump(tag_52)
+    tag_53:
+        /* "test_contracts/fibonacci-test.sol":776:784  finalFib */
+      sload(0x01)
+        /* "test_contracts/fibonacci-test.sol":769:784  return finalFib */
+      swap2
+      pop
+      pop
+        /* "test_contracts/fibonacci-test.sol":358:792  function fibonacci() public returns (uint) {... */
+    tag_49:
+      swap1
+      jump	// out
+        /* "test_contracts/fibonacci-test.sol":262:350  function getFibonacci() public view returns (uint){... */
+    tag_31:
+        /* "test_contracts/fibonacci-test.sol":307:311  uint */
+      0x00
+        /* "test_contracts/fibonacci-test.sol":330:342  expecctedNum */
+      dup1
+      sload
+        /* "test_contracts/fibonacci-test.sol":323:342  return expecctedNum */
+      swap1
+      pop
+        /* "test_contracts/fibonacci-test.sol":262:350  function getFibonacci() public view returns (uint){... */
+      swap1
+      jump	// out
+        /* "test_contracts/fibonacci-test.sol":184:256  function setFibonacci(uint n) public {... */
+    tag_36:
+        /* "test_contracts/fibonacci-test.sol":247:248  n */
+      dup1
+        /* "test_contracts/fibonacci-test.sol":232:244  expecctedNum */
+      0x00
+        /* "test_contracts/fibonacci-test.sol":232:248  expecctedNum = n */
+      dup2
+      swap1
+      sstore
+      pop
+        /* "test_contracts/fibonacci-test.sol":184:256  function setFibonacci(uint n) public {... */
+      pop
+      jump	// out
+        /* "#utility.yul":7:84   */
+    tag_59:
+        /* "#utility.yul":44:51   */
+      0x00
+        /* "#utility.yul":73:78   */
+      dup2
+        /* "#utility.yul":62:78   */
+      swap1
+      pop
+        /* "#utility.yul":7:84   */
+      swap2
+      swap1
+      pop
+      jump	// out
+        /* "#utility.yul":90:208   */
+    tag_60:
+        /* "#utility.yul":177:201   */
+      tag_70
+        /* "#utility.yul":195:200   */
+      dup2
+        /* "#utility.yul":177:201   */
+      tag_59
+      jump	// in
+    tag_70:
+        /* "#utility.yul":172:175   */
+      dup3
+        /* "#utility.yul":165:202   */
+      mstore
+        /* "#utility.yul":90:208   */
+      pop
+      pop
+      jump	// out
+        /* "#utility.yul":214:436   */
+    tag_15:
+        /* "#utility.yul":307:311   */
+      0x00
+        /* "#utility.yul":345:347   */
+      0x20
+        /* "#utility.yul":334:343   */
+      dup3
+        /* "#utility.yul":330:348   */
+      add
+        /* "#utility.yul":322:348   */
+      swap1
+      pop
+        /* "#utility.yul":358:429   */
+      tag_72
+        /* "#utility.yul":426:427   */
+      0x00
+        /* "#utility.yul":415:424   */
+      dup4
+        /* "#utility.yul":411:428   */
+      add
+        /* "#utility.yul":402:408   */
+      dup5
+        /* "#utility.yul":358:429   */
+      tag_60
+      jump	// in
+    tag_72:
+        /* "#utility.yul":214:436   */
+      swap3
+      swap2
+      pop
+      pop
+      jump	// out
+        /* "#utility.yul":523:640   */
+    tag_62:
+        /* "#utility.yul":632:633   */
+      0x00
+        /* "#utility.yul":629:630   */
+      dup1
+        /* "#utility.yul":622:634   */
+      revert
+        /* "#utility.yul":769:891   */
+    tag_64:
+        /* "#utility.yul":842:866   */
+      tag_77
+        /* "#utility.yul":860:865   */
+      dup2
+        /* "#utility.yul":842:866   */
+      tag_59
+      jump	// in
+    tag_77:
+        /* "#utility.yul":835:840   */
+      dup2
+        /* "#utility.yul":832:867   */
+      eq
+        /* "#utility.yul":822:885   */
+      tag_78
+      jumpi
+        /* "#utility.yul":881:882   */
+      0x00
+        /* "#utility.yul":878:879   */
+      dup1
+        /* "#utility.yul":871:883   */
+      revert
+        /* "#utility.yul":822:885   */
+    tag_78:
+        /* "#utility.yul":769:891   */
+      pop
+      jump	// out
+        /* "#utility.yul":897:1036   */
+    tag_65:
+        /* "#utility.yul":943:948   */
+      0x00
+        /* "#utility.yul":981:987   */
+      dup2
+        /* "#utility.yul":968:988   */
+      calldataload
+        /* "#utility.yul":959:988   */
+      swap1
+      pop
+        /* "#utility.yul":997:1030   */
+      tag_80
+        /* "#utility.yul":1024:1029   */
+      dup2
+        /* "#utility.yul":997:1030   */
+      tag_64
+      jump	// in
+    tag_80:
+        /* "#utility.yul":897:1036   */
+      swap3
+      swap2
+      pop
+      pop
+      jump	// out
+        /* "#utility.yul":1042:1371   */
+    tag_35:
+        /* "#utility.yul":1101:1107   */
+      0x00
+        /* "#utility.yul":1150:1152   */
+      0x20
+        /* "#utility.yul":1138:1147   */
+      dup3
+        /* "#utility.yul":1129:1136   */
+      dup5
+        /* "#utility.yul":1125:1148   */
+      sub
+        /* "#utility.yul":1121:1153   */
+      slt
+        /* "#utility.yul":1118:1237   */
+      iszero
+      tag_82
+      jumpi
+        /* "#utility.yul":1156:1235   */
+      tag_83
+      tag_62
+      jump	// in
+    tag_83:
+        /* "#utility.yul":1118:1237   */
+    tag_82:
+        /* "#utility.yul":1276:1277   */
+      0x00
+        /* "#utility.yul":1301:1354   */
+      tag_84
+        /* "#utility.yul":1346:1353   */
+      dup5
+        /* "#utility.yul":1337:1343   */
+      dup3
+        /* "#utility.yul":1326:1335   */
+      dup6
+        /* "#utility.yul":1322:1344   */
+      add
+        /* "#utility.yul":1301:1354   */
+      tag_65
+      jump	// in
+    tag_84:
+        /* "#utility.yul":1291:1354   */
+      swap2
+      pop
+        /* "#utility.yul":1247:1364   */
+      pop
+        /* "#utility.yul":1042:1371   */
+      swap3
+      swap2
+      pop
+      pop
+      jump	// out
+        /* "#utility.yul":1377:1557   */
+    tag_66:
+        /* "#utility.yul":1425:1502   */
+      0x4e487b7100000000000000000000000000000000000000000000000000000000
+        /* "#utility.yul":1422:1423   */
+      0x00
+        /* "#utility.yul":1415:1503   */
+      mstore
+        /* "#utility.yul":1522:1526   */
+      0x11
+        /* "#utility.yul":1519:1520   */
+      0x04
+        /* "#utility.yul":1512:1527   */
+      mstore
+        /* "#utility.yul":1546:1550   */
+      0x24
+        /* "#utility.yul":1543:1544   */
+      0x00
+        /* "#utility.yul":1536:1551   */
+      revert
+        /* "#utility.yul":1563:1754   */
+    tag_46:
+        /* "#utility.yul":1603:1606   */
+      0x00
+        /* "#utility.yul":1622:1642   */
+      tag_87
+        /* "#utility.yul":1640:1641   */
+      dup3
+        /* "#utility.yul":1622:1642   */
+      tag_59
+      jump	// in
+    tag_87:
+        /* "#utility.yul":1617:1642   */
+      swap2
+      pop
+        /* "#utility.yul":1656:1676   */
+      tag_88
+        /* "#utility.yul":1674:1675   */
+      dup4
+        /* "#utility.yul":1656:1676   */
+      tag_59
+      jump	// in
+    tag_88:
+        /* "#utility.yul":1651:1676   */
+      swap3
+      pop
+        /* "#utility.yul":1699:1700   */
+      dup3
+        /* "#utility.yul":1696:1697   */
+      dup3
+        /* "#utility.yul":1692:1701   */
+      add
+        /* "#utility.yul":1685:1701   */
+      swap1
+      pop
+        /* "#utility.yul":1720:1723   */
+      dup1
+        /* "#utility.yul":1717:1718   */
+      dup3
+        /* "#utility.yul":1714:1724   */
+      gt
+        /* "#utility.yul":1711:1747   */
+      iszero
+      tag_89
+      jumpi
+        /* "#utility.yul":1727:1745   */
+      tag_90
+      tag_66
+      jump	// in
+    tag_90:
+        /* "#utility.yul":1711:1747   */
+    tag_89:
+        /* "#utility.yul":1563:1754   */
+      swap3
+      swap2
+      pop
+      pop
+      jump	// out
+        /* "#utility.yul":1760:1993   */
+    tag_48:
+        /* "#utility.yul":1799:1802   */
+      0x00
+        /* "#utility.yul":1822:1846   */
+      tag_92
+        /* "#utility.yul":1840:1845   */
+      dup3
+        /* "#utility.yul":1822:1846   */
+      tag_59
+      jump	// in
+    tag_92:
+        /* "#utility.yul":1813:1846   */
+      swap2
+      pop
+        /* "#utility.yul":1868:1934   */
+      0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+        /* "#utility.yul":1861:1866   */
+      dup3
+        /* "#utility.yul":1858:1935   */
+      sub
+        /* "#utility.yul":1855:1958   */
+      tag_93
+      jumpi
+        /* "#utility.yul":1938:1956   */
+      tag_94
+      tag_66
+      jump	// in
+    tag_94:
+        /* "#utility.yul":1855:1958   */
+    tag_93:
+        /* "#utility.yul":1985:1986   */
+      0x01
+        /* "#utility.yul":1978:1983   */
+      dup3
+        /* "#utility.yul":1974:1987   */
+      add
+        /* "#utility.yul":1967:1987   */
+      swap1
+      pop
+        /* "#utility.yul":1760:1993   */
+      swap2
+      swap1
+      pop
+      jump	// out
+
+    auxdata: 0xa264697066735822122072730d391039ad0bda263de168a3927c46ef7610135736b14645795e8be302fb64736f6c637827302e382e31362d646576656c6f702e323032322e382e372b636f6d6d69742e34396132646239390058
+}

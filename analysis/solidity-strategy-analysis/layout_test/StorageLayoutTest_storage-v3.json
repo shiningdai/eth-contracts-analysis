@@ -1,0 +1,116 @@
+{"storage":[{"astId":3,"contract":"test_contracts/storage-layout-test.sol:StorageLayoutTest","label":"un128","offset":0,"slot":"0","type":"t_uint128"},{"astId":5,"contract":"test_contracts/storage-layout-test.sol:StorageLayoutTest","label":"un64","offset":16,"slot":"0","type":"t_uint64"},{"astId":7,"contract":"test_contracts/storage-layout-test.sol:StorageLayoutTest","label":"un256","offset":0,"slot":"1","type":"t_uint256"},{"astId":9,"contract":"test_contracts/storage-layout-test.sol:StorageLayoutTest","label":"bl","offset":0,"slot":"2","type":"t_bool"},{"astId":13,"contract":"test_contracts/storage-layout-test.sol:StorageLayoutTest","label":"unarr","offset":0,"slot":"3","type":"t_array(t_uint64)8_storage"},{"astId":17,"contract":"test_contracts/storage-layout-test.sol:StorageLayoutTest","label":"balance","offset":0,"slot":"5","type":"t_mapping(t_address,t_uint256)"},{"astId":20,"contract":"test_contracts/storage-layout-test.sol:StorageLayoutTest","label":"dynarr","offset":0,"slot":"6","type":"t_array(t_uint256)dyn_storage"},{"astId":22,"contract":"test_contracts/storage-layout-test.sol:StorageLayoutTest","label":"un256_1","offset":0,"slot":"7","type":"t_uint256"}],"types":{"t_address":{"encoding":"inplace","label":"address","numberOfBytes":"20"},"t_array(t_uint256)dyn_storage":{"base":"t_uint256","encoding":"dynamic_array","label":"uint256[]","numberOfBytes":"32"},"t_array(t_uint64)8_storage":{"base":"t_uint64","encoding":"inplace","label":"uint64[8]","numberOfBytes":"64"},"t_bool":{"encoding":"inplace","label":"bool","numberOfBytes":"1"},"t_mapping(t_address,t_uint256)":{"encoding":"mapping","key":"t_address","label":"mapping(address => uint256)","numberOfBytes":"32","value":"t_uint256"},"t_uint128":{"encoding":"inplace","label":"uint128","numberOfBytes":"16"},"t_uint256":{"encoding":"inplace","label":"uint256","numberOfBytes":"32"},"t_uint64":{"encoding":"inplace","label":"uint64","numberOfBytes":"8"}}}
+
+{
+    "storage": [
+      {
+        "astId": 3,
+        "contract": "test_contracts/storage-layout-test.sol:StorageLayoutTest",
+        "label": "un128",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_uint128"
+      },
+      {
+        "astId": 5,
+        "contract": "test_contracts/storage-layout-test.sol:StorageLayoutTest",
+        "label": "un64",
+        "offset": 16,
+        "slot": "0",
+        "type": "t_uint64"
+      },
+      {
+        "astId": 7,
+        "contract": "test_contracts/storage-layout-test.sol:StorageLayoutTest",
+        "label": "un256",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 9,
+        "contract": "test_contracts/storage-layout-test.sol:StorageLayoutTest",
+        "label": "bl",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_bool"
+      },
+      {
+        "astId": 13,
+        "contract": "test_contracts/storage-layout-test.sol:StorageLayoutTest",
+        "label": "unarr",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_array(t_uint64)8_storage"
+      },
+      {
+        "astId": 17,
+        "contract": "test_contracts/storage-layout-test.sol:StorageLayoutTest",
+        "label": "balance",
+        "offset": 0,
+        "slot": "5",
+        "type": "t_mapping(t_address,t_uint256)"
+      },
+      {
+        "astId": 20,
+        "contract": "test_contracts/storage-layout-test.sol:StorageLayoutTest",
+        "label": "dynarr",
+        "offset": 0,
+        "slot": "6",
+        "type": "t_array(t_uint256)dyn_storage"
+      },
+      {
+        "astId": 22,
+        "contract": "test_contracts/storage-layout-test.sol:StorageLayoutTest",
+        "label": "un256_1",
+        "offset": 0,
+        "slot": "7",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_uint256)dyn_storage": {
+        "base": "t_uint256",
+        "encoding": "dynamic_array",
+        "label": "uint256[]",
+        "numberOfBytes": "32"
+      },
+      "t_array(t_uint64)8_storage": {
+        "base": "t_uint64",
+        "encoding": "inplace",
+        "label": "uint64[8]",
+        "numberOfBytes": "64"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_mapping(t_address,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_uint128": {
+        "encoding": "inplace",
+        "label": "uint128",
+        "numberOfBytes": "16"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      },
+      "t_uint64": {
+        "encoding": "inplace",
+        "label": "uint64",
+        "numberOfBytes": "8"
+      }
+    }
+  }

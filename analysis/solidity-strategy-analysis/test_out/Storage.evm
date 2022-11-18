@@ -1,0 +1,184 @@
+    /* "test_contracts/test.sol":199:751  contract Storage {... */
+  mstore(0x40, 0x80)
+  callvalue
+  dup1
+  iszero
+  tag_1
+  jumpi
+  0x00
+  dup1
+  revert
+tag_1:
+  pop
+  dataSize(sub_0)
+  dup1
+  dataOffset(sub_0)
+  0x00
+  codecopy
+  0x00
+  return
+stop
+
+sub_0: assembly {
+        /* "test_contracts/test.sol":199:751  contract Storage {... */
+      mstore(0x40, 0x80)
+      callvalue
+      dup1
+      iszero
+      tag_1
+      jumpi
+      0x00
+      dup1
+      revert
+    tag_1:
+      pop
+      jumpi(tag_2, lt(calldatasize, 0x04))
+      shr(0xe0, calldataload(0x00))
+      dup1
+      0x2e64cec1
+      eq
+      tag_3
+      jumpi
+      dup1
+      0x6057361d
+      eq
+      tag_4
+      jumpi
+    tag_2:
+      0x00
+      dup1
+      revert
+        /* "test_contracts/test.sol":554:749  function retrieve() public view returns (uint256){... */
+    tag_3:
+        /* "test_contracts/test.sol":595:602  uint256 */
+      0x00
+        /* "test_contracts/test.sol":736:742  number */
+      sload
+        /* "test_contracts/test.sol":554:749  function retrieve() public view returns (uint256){... */
+      mload(0x40)
+        /* "#utility.yul":160:185   */
+      swap1
+      dup2
+      mstore
+        /* "#utility.yul":148:150   */
+      0x20
+        /* "#utility.yul":133:151   */
+      add
+        /* "test_contracts/test.sol":554:749  function retrieve() public view returns (uint256){... */
+      mload(0x40)
+      dup1
+      swap2
+      sub
+      swap1
+      return
+        /* "test_contracts/test.sol":329:473  function store(uint256 num) public {... */
+    tag_4:
+      tag_9
+      tag_10
+      calldatasize
+      0x04
+      tag_11
+      jump	// in
+    tag_10:
+      tag_12
+      jump	// in
+    tag_9:
+      stop
+    tag_12:
+        /* "test_contracts/test.sol":374:380  number */
+      0x00
+        /* "test_contracts/test.sol":374:386  number = num */
+      dup2
+      swap1
+      sstore
+        /* "test_contracts/test.sol":404:414  number > 0 */
+      dup1
+        /* "test_contracts/test.sol":396:466  require(number > 0, "state 'number' has not been writen successfully") */
+      tag_15
+      jumpi
+      mload(0x40)
+      shl(0xe5, 0x461bcd)
+      dup2
+      mstore
+        /* "#utility.yul":583:585   */
+      0x20
+        /* "test_contracts/test.sol":396:466  require(number > 0, "state 'number' has not been writen successfully") */
+      0x04
+      dup3
+      add
+        /* "#utility.yul":565:586   */
+      mstore
+        /* "#utility.yul":622:624   */
+      0x2f
+        /* "#utility.yul":602:620   */
+      0x24
+      dup3
+      add
+        /* "#utility.yul":595:625   */
+      mstore
+        /* "#utility.yul":661:695   */
+      0x737461746520276e756d6265722720686173206e6f74206265656e2077726974
+        /* "#utility.yul":641:659   */
+      0x44
+      dup3
+      add
+        /* "#utility.yul":634:696   */
+      mstore
+      shl(0x88, 0x656e207375636365737366756c6c79)
+        /* "#utility.yul":712:730   */
+      0x64
+      dup3
+      add
+        /* "#utility.yul":705:750   */
+      mstore
+        /* "#utility.yul":767:786   */
+      0x84
+      add
+        /* "test_contracts/test.sol":396:466  require(number > 0, "state 'number' has not been writen successfully") */
+      mload(0x40)
+      dup1
+      swap2
+      sub
+      swap1
+      revert
+    tag_15:
+        /* "test_contracts/test.sol":329:473  function store(uint256 num) public {... */
+      pop
+      jump	// out
+        /* "#utility.yul":196:376   */
+    tag_11:
+        /* "#utility.yul":255:261   */
+      0x00
+        /* "#utility.yul":308:310   */
+      0x20
+        /* "#utility.yul":296:305   */
+      dup3
+        /* "#utility.yul":287:294   */
+      dup5
+        /* "#utility.yul":283:306   */
+      sub
+        /* "#utility.yul":279:311   */
+      slt
+        /* "#utility.yul":276:328   */
+      iszero
+      tag_21
+      jumpi
+        /* "#utility.yul":324:325   */
+      0x00
+        /* "#utility.yul":321:322   */
+      dup1
+        /* "#utility.yul":314:326   */
+      revert
+        /* "#utility.yul":276:328   */
+    tag_21:
+      pop
+        /* "#utility.yul":347:370   */
+      calldataload
+      swap2
+        /* "#utility.yul":196:376   */
+      swap1
+      pop
+      jump	// out
+
+    auxdata: 0xa26469706673582212207cba659a5aa70c2db82f5a2f1933511a19c0ef98a2cc73b1f6450833b677cd2164736f6c637827302e382e31362d646576656c6f702e323032322e382e372b636f6d6d69742e34396132646239390058
+}

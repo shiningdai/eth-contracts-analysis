@@ -1,0 +1,1 @@
+[{"inputs":[{"internalType":"uint64[4]","name":"arg","type":"uint64[4]"}],"name":"store","outputs":[],"stateMutability":"nonpayable","type":"function"}]

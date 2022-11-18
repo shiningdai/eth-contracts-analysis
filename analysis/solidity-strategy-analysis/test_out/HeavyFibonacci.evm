@@ -1,0 +1,721 @@
+    /* "test_contracts/fibonacci-heavy-only.sol":52:928  contract HeavyFibonacci {... */
+  mstore(0x40, 0x80)
+    /* "test_contracts/fibonacci-heavy-only.sol":150:151  0 */
+  0x00
+    /* "test_contracts/fibonacci-heavy-only.sol":138:151  uint fib1 = 0 */
+  0x02
+  sstore
+    /* "test_contracts/fibonacci-heavy-only.sol":169:170  1 */
+  0x01
+    /* "test_contracts/fibonacci-heavy-only.sol":157:170  uint fib2 = 1 */
+  0x03
+  sstore
+    /* "test_contracts/fibonacci-heavy-only.sol":52:928  contract HeavyFibonacci {... */
+  callvalue
+  dup1
+  iszero
+  tag_1
+  jumpi
+  0x00
+  dup1
+  revert
+tag_1:
+  pop
+  dataSize(sub_0)
+  dup1
+  dataOffset(sub_0)
+  0x00
+  codecopy
+  0x00
+  return
+stop
+
+sub_0: assembly {
+        /* "test_contracts/fibonacci-heavy-only.sol":52:928  contract HeavyFibonacci {... */
+      mstore(0x40, 0x80)
+      callvalue
+      dup1
+      iszero
+      tag_1
+      jumpi
+      0x00
+      dup1
+      revert
+    tag_1:
+      pop
+      jumpi(tag_2, lt(calldatasize, 0x04))
+      shr(0xe0, calldataload(0x00))
+      dup1
+      0xb837d3c5
+      gt
+      tag_10
+      jumpi
+      dup1
+      0xb837d3c5
+      eq
+      tag_6
+      jumpi
+      dup1
+      0xe655e4bf
+      eq
+      tag_7
+      jumpi
+      dup1
+      0xe9b19170
+      eq
+      tag_8
+      jumpi
+      dup1
+      0xfe75faab
+      eq
+      tag_9
+      jumpi
+      jump(tag_2)
+    tag_10:
+      dup1
+      0x3e6c4812
+      eq
+      tag_3
+      jumpi
+      dup1
+      0x685b2487
+      eq
+      tag_4
+      jumpi
+      dup1
+      0xad95e410
+      eq
+      tag_5
+      jumpi
+    tag_2:
+      0x00
+      dup1
+      revert
+        /* "test_contracts/fibonacci-heavy-only.sol":838:926  function getFinalFibonacci() public view returns (uint) {... */
+    tag_3:
+      tag_11
+      tag_12
+      jump	// in
+    tag_11:
+      mload(0x40)
+      tag_13
+      swap2
+      swap1
+      tag_14
+      jump	// in
+    tag_13:
+      mload(0x40)
+      dup1
+      swap2
+      sub
+      swap1
+      return
+        /* "test_contracts/fibonacci-heavy-only.sol":768:833  function setFinalFibonacci() public {... */
+    tag_4:
+      tag_15
+      tag_16
+      jump	// in
+    tag_15:
+      stop
+        /* "test_contracts/fibonacci-heavy-only.sol":82:106  uint public expecctedNum */
+    tag_5:
+      tag_17
+      tag_18
+      jump	// in
+    tag_17:
+      mload(0x40)
+      tag_19
+      swap2
+      swap1
+      tag_14
+      jump	// in
+    tag_19:
+      mload(0x40)
+      dup1
+      swap2
+      sub
+      swap1
+      return
+        /* "test_contracts/fibonacci-heavy-only.sol":112:132  uint public finalFib */
+    tag_6:
+      tag_20
+      tag_21
+      jump	// in
+    tag_20:
+      mload(0x40)
+      tag_22
+      swap2
+      swap1
+      tag_14
+      jump	// in
+    tag_22:
+      mload(0x40)
+      dup1
+      swap2
+      sub
+      swap1
+      return
+        /* "test_contracts/fibonacci-heavy-only.sol":344:762  function fibonacci() public returns (uint) {... */
+    tag_7:
+      tag_23
+      tag_24
+      jump	// in
+    tag_23:
+      mload(0x40)
+      tag_25
+      swap2
+      swap1
+      tag_14
+      jump	// in
+    tag_25:
+      mload(0x40)
+      dup1
+      swap2
+      sub
+      swap1
+      return
+        /* "test_contracts/fibonacci-heavy-only.sol":252:338  function getFibonacci() public view returns (uint){... */
+    tag_8:
+      tag_26
+      tag_27
+      jump	// in
+    tag_26:
+      mload(0x40)
+      tag_28
+      swap2
+      swap1
+      tag_14
+      jump	// in
+    tag_28:
+      mload(0x40)
+      dup1
+      swap2
+      sub
+      swap1
+      return
+        /* "test_contracts/fibonacci-heavy-only.sol":177:247  function setFibonacci(uint n) public {... */
+    tag_9:
+      tag_29
+      0x04
+      dup1
+      calldatasize
+      sub
+      dup2
+      add
+      swap1
+      tag_30
+      swap2
+      swap1
+      tag_31
+      jump	// in
+    tag_30:
+      tag_32
+      jump	// in
+    tag_29:
+      stop
+        /* "test_contracts/fibonacci-heavy-only.sol":838:926  function getFinalFibonacci() public view returns (uint) {... */
+    tag_12:
+        /* "test_contracts/fibonacci-heavy-only.sol":888:892  uint */
+      0x00
+        /* "test_contracts/fibonacci-heavy-only.sol":911:919  finalFib */
+      sload(0x01)
+        /* "test_contracts/fibonacci-heavy-only.sol":904:919  return finalFib */
+      swap1
+      pop
+        /* "test_contracts/fibonacci-heavy-only.sol":838:926  function getFinalFibonacci() public view returns (uint) {... */
+      swap1
+      jump	// out
+        /* "test_contracts/fibonacci-heavy-only.sol":768:833  function setFinalFibonacci() public {... */
+    tag_16:
+        /* "test_contracts/fibonacci-heavy-only.sol":825:826  0 */
+      0x00
+        /* "test_contracts/fibonacci-heavy-only.sol":814:822  finalFib */
+      0x01
+        /* "test_contracts/fibonacci-heavy-only.sol":814:826  finalFib = 0 */
+      dup2
+      swap1
+      sstore
+      pop
+        /* "test_contracts/fibonacci-heavy-only.sol":768:833  function setFinalFibonacci() public {... */
+      jump	// out
+        /* "test_contracts/fibonacci-heavy-only.sol":82:106  uint public expecctedNum */
+    tag_18:
+      sload(0x00)
+      dup2
+      jump	// out
+        /* "test_contracts/fibonacci-heavy-only.sol":112:132  uint public finalFib */
+    tag_21:
+      sload(0x01)
+      dup2
+      jump	// out
+        /* "test_contracts/fibonacci-heavy-only.sol":344:762  function fibonacci() public returns (uint) {... */
+    tag_24:
+        /* "test_contracts/fibonacci-heavy-only.sol":381:385  uint */
+      0x00
+        /* "test_contracts/fibonacci-heavy-only.sol":417:418  0 */
+      dup1
+        /* "test_contracts/fibonacci-heavy-only.sol":401:413  expecctedNum */
+      sload(0x00)
+        /* "test_contracts/fibonacci-heavy-only.sol":401:418  expecctedNum == 0 */
+      sub
+        /* "test_contracts/fibonacci-heavy-only.sol":397:453  if (expecctedNum == 0) {... */
+      tag_36
+      jumpi
+        /* "test_contracts/fibonacci-heavy-only.sol":441:442  0 */
+      0x00
+        /* "test_contracts/fibonacci-heavy-only.sol":434:442  return 0 */
+      swap1
+      pop
+      jump(tag_35)
+        /* "test_contracts/fibonacci-heavy-only.sol":397:453  if (expecctedNum == 0) {... */
+    tag_36:
+        /* "test_contracts/fibonacci-heavy-only.sol":482:483  1 */
+      0x01
+        /* "test_contracts/fibonacci-heavy-only.sol":466:478  expecctedNum */
+      sload(0x00)
+        /* "test_contracts/fibonacci-heavy-only.sol":466:483  expecctedNum == 1 */
+      sub
+        /* "test_contracts/fibonacci-heavy-only.sol":462:518  if (expecctedNum == 1) {... */
+      tag_37
+      jumpi
+        /* "test_contracts/fibonacci-heavy-only.sol":506:507  1 */
+      0x01
+        /* "test_contracts/fibonacci-heavy-only.sol":499:507  return 1 */
+      swap1
+      pop
+      jump(tag_35)
+        /* "test_contracts/fibonacci-heavy-only.sol":462:518  if (expecctedNum == 1) {... */
+    tag_37:
+        /* "test_contracts/fibonacci-heavy-only.sol":527:536  uint _idx */
+      0x00
+        /* "test_contracts/fibonacci-heavy-only.sol":539:540  2 */
+      0x02
+        /* "test_contracts/fibonacci-heavy-only.sol":527:540  uint _idx = 2 */
+      swap1
+      pop
+        /* "test_contracts/fibonacci-heavy-only.sol":557:558  0 */
+      0x00
+        /* "test_contracts/fibonacci-heavy-only.sol":550:554  fib1 */
+      0x02
+        /* "test_contracts/fibonacci-heavy-only.sol":550:558  fib1 = 0 */
+      dup2
+      swap1
+      sstore
+      pop
+        /* "test_contracts/fibonacci-heavy-only.sol":575:576  1 */
+      0x01
+        /* "test_contracts/fibonacci-heavy-only.sol":568:572  fib2 */
+      0x03
+        /* "test_contracts/fibonacci-heavy-only.sol":568:576  fib2 = 1 */
+      dup2
+      swap1
+      sstore
+      pop
+        /* "test_contracts/fibonacci-heavy-only.sol":598:599  2 */
+      0x02
+        /* "test_contracts/fibonacci-heavy-only.sol":591:599  _idx = 2 */
+      swap1
+      pop
+        /* "test_contracts/fibonacci-heavy-only.sol":586:731  for (_idx = 2; _idx < expecctedNum; _idx++) {... */
+    tag_38:
+        /* "test_contracts/fibonacci-heavy-only.sol":608:620  expecctedNum */
+      sload(0x00)
+        /* "test_contracts/fibonacci-heavy-only.sol":601:605  _idx */
+      dup2
+        /* "test_contracts/fibonacci-heavy-only.sol":601:620  _idx < expecctedNum */
+      lt
+        /* "test_contracts/fibonacci-heavy-only.sol":586:731  for (_idx = 2; _idx < expecctedNum; _idx++) {... */
+      iszero
+      tag_39
+      jumpi
+        /* "test_contracts/fibonacci-heavy-only.sol":662:666  fib2 */
+      sload(0x03)
+        /* "test_contracts/fibonacci-heavy-only.sol":655:659  fib1 */
+      sload(0x02)
+        /* "test_contracts/fibonacci-heavy-only.sol":655:666  fib1 + fib2 */
+      tag_41
+      swap2
+      swap1
+      tag_42
+      jump	// in
+    tag_41:
+        /* "test_contracts/fibonacci-heavy-only.sol":644:652  finalFib */
+      0x01
+        /* "test_contracts/fibonacci-heavy-only.sol":644:666  finalFib = fib1 + fib2 */
+      dup2
+      swap1
+      sstore
+      pop
+        /* "test_contracts/fibonacci-heavy-only.sol":687:691  fib2 */
+      sload(0x03)
+        /* "test_contracts/fibonacci-heavy-only.sol":680:684  fib1 */
+      0x02
+        /* "test_contracts/fibonacci-heavy-only.sol":680:691  fib1 = fib2 */
+      dup2
+      swap1
+      sstore
+      pop
+        /* "test_contracts/fibonacci-heavy-only.sol":712:720  finalFib */
+      sload(0x01)
+        /* "test_contracts/fibonacci-heavy-only.sol":705:709  fib2 */
+      0x03
+        /* "test_contracts/fibonacci-heavy-only.sol":705:720  fib2 = finalFib */
+      dup2
+      swap1
+      sstore
+      pop
+        /* "test_contracts/fibonacci-heavy-only.sol":622:628  _idx++ */
+      dup1
+      dup1
+      tag_43
+      swap1
+      tag_44
+      jump	// in
+    tag_43:
+      swap2
+      pop
+      pop
+        /* "test_contracts/fibonacci-heavy-only.sol":586:731  for (_idx = 2; _idx < expecctedNum; _idx++) {... */
+      jump(tag_38)
+    tag_39:
+        /* "test_contracts/fibonacci-heavy-only.sol":747:755  finalFib */
+      sload(0x01)
+        /* "test_contracts/fibonacci-heavy-only.sol":740:755  return finalFib */
+      swap2
+      pop
+      pop
+        /* "test_contracts/fibonacci-heavy-only.sol":344:762  function fibonacci() public returns (uint) {... */
+    tag_35:
+      swap1
+      jump	// out
+        /* "test_contracts/fibonacci-heavy-only.sol":252:338  function getFibonacci() public view returns (uint){... */
+    tag_27:
+        /* "test_contracts/fibonacci-heavy-only.sol":297:301  uint */
+      0x00
+        /* "test_contracts/fibonacci-heavy-only.sol":319:331  expecctedNum */
+      dup1
+      sload
+        /* "test_contracts/fibonacci-heavy-only.sol":312:331  return expecctedNum */
+      swap1
+      pop
+        /* "test_contracts/fibonacci-heavy-only.sol":252:338  function getFibonacci() public view returns (uint){... */
+      swap1
+      jump	// out
+        /* "test_contracts/fibonacci-heavy-only.sol":177:247  function setFibonacci(uint n) public {... */
+    tag_32:
+        /* "test_contracts/fibonacci-heavy-only.sol":239:240  n */
+      dup1
+        /* "test_contracts/fibonacci-heavy-only.sol":224:236  expecctedNum */
+      0x00
+        /* "test_contracts/fibonacci-heavy-only.sol":224:240  expecctedNum = n */
+      dup2
+      swap1
+      sstore
+      pop
+        /* "test_contracts/fibonacci-heavy-only.sol":177:247  function setFibonacci(uint n) public {... */
+      pop
+      jump	// out
+        /* "#utility.yul":7:84   */
+    tag_47:
+        /* "#utility.yul":44:51   */
+      0x00
+        /* "#utility.yul":73:78   */
+      dup2
+        /* "#utility.yul":62:78   */
+      swap1
+      pop
+        /* "#utility.yul":7:84   */
+      swap2
+      swap1
+      pop
+      jump	// out
+        /* "#utility.yul":90:208   */
+    tag_48:
+        /* "#utility.yul":177:201   */
+      tag_58
+        /* "#utility.yul":195:200   */
+      dup2
+        /* "#utility.yul":177:201   */
+      tag_47
+      jump	// in
+    tag_58:
+        /* "#utility.yul":172:175   */
+      dup3
+        /* "#utility.yul":165:202   */
+      mstore
+        /* "#utility.yul":90:208   */
+      pop
+      pop
+      jump	// out
+        /* "#utility.yul":214:436   */
+    tag_14:
+        /* "#utility.yul":307:311   */
+      0x00
+        /* "#utility.yul":345:347   */
+      0x20
+        /* "#utility.yul":334:343   */
+      dup3
+        /* "#utility.yul":330:348   */
+      add
+        /* "#utility.yul":322:348   */
+      swap1
+      pop
+        /* "#utility.yul":358:429   */
+      tag_60
+        /* "#utility.yul":426:427   */
+      0x00
+        /* "#utility.yul":415:424   */
+      dup4
+        /* "#utility.yul":411:428   */
+      add
+        /* "#utility.yul":402:408   */
+      dup5
+        /* "#utility.yul":358:429   */
+      tag_48
+      jump	// in
+    tag_60:
+        /* "#utility.yul":214:436   */
+      swap3
+      swap2
+      pop
+      pop
+      jump	// out
+        /* "#utility.yul":523:640   */
+    tag_50:
+        /* "#utility.yul":632:633   */
+      0x00
+        /* "#utility.yul":629:630   */
+      dup1
+        /* "#utility.yul":622:634   */
+      revert
+        /* "#utility.yul":769:891   */
+    tag_52:
+        /* "#utility.yul":842:866   */
+      tag_65
+        /* "#utility.yul":860:865   */
+      dup2
+        /* "#utility.yul":842:866   */
+      tag_47
+      jump	// in
+    tag_65:
+        /* "#utility.yul":835:840   */
+      dup2
+        /* "#utility.yul":832:867   */
+      eq
+        /* "#utility.yul":822:885   */
+      tag_66
+      jumpi
+        /* "#utility.yul":881:882   */
+      0x00
+        /* "#utility.yul":878:879   */
+      dup1
+        /* "#utility.yul":871:883   */
+      revert
+        /* "#utility.yul":822:885   */
+    tag_66:
+        /* "#utility.yul":769:891   */
+      pop
+      jump	// out
+        /* "#utility.yul":897:1036   */
+    tag_53:
+        /* "#utility.yul":943:948   */
+      0x00
+        /* "#utility.yul":981:987   */
+      dup2
+        /* "#utility.yul":968:988   */
+      calldataload
+        /* "#utility.yul":959:988   */
+      swap1
+      pop
+        /* "#utility.yul":997:1030   */
+      tag_68
+        /* "#utility.yul":1024:1029   */
+      dup2
+        /* "#utility.yul":997:1030   */
+      tag_52
+      jump	// in
+    tag_68:
+        /* "#utility.yul":897:1036   */
+      swap3
+      swap2
+      pop
+      pop
+      jump	// out
+        /* "#utility.yul":1042:1371   */
+    tag_31:
+        /* "#utility.yul":1101:1107   */
+      0x00
+        /* "#utility.yul":1150:1152   */
+      0x20
+        /* "#utility.yul":1138:1147   */
+      dup3
+        /* "#utility.yul":1129:1136   */
+      dup5
+        /* "#utility.yul":1125:1148   */
+      sub
+        /* "#utility.yul":1121:1153   */
+      slt
+        /* "#utility.yul":1118:1237   */
+      iszero
+      tag_70
+      jumpi
+        /* "#utility.yul":1156:1235   */
+      tag_71
+      tag_50
+      jump	// in
+    tag_71:
+        /* "#utility.yul":1118:1237   */
+    tag_70:
+        /* "#utility.yul":1276:1277   */
+      0x00
+        /* "#utility.yul":1301:1354   */
+      tag_72
+        /* "#utility.yul":1346:1353   */
+      dup5
+        /* "#utility.yul":1337:1343   */
+      dup3
+        /* "#utility.yul":1326:1335   */
+      dup6
+        /* "#utility.yul":1322:1344   */
+      add
+        /* "#utility.yul":1301:1354   */
+      tag_53
+      jump	// in
+    tag_72:
+        /* "#utility.yul":1291:1354   */
+      swap2
+      pop
+        /* "#utility.yul":1247:1364   */
+      pop
+        /* "#utility.yul":1042:1371   */
+      swap3
+      swap2
+      pop
+      pop
+      jump	// out
+        /* "#utility.yul":1377:1557   */
+    tag_54:
+        /* "#utility.yul":1425:1502   */
+      0x4e487b7100000000000000000000000000000000000000000000000000000000
+        /* "#utility.yul":1422:1423   */
+      0x00
+        /* "#utility.yul":1415:1503   */
+      mstore
+        /* "#utility.yul":1522:1526   */
+      0x11
+        /* "#utility.yul":1519:1520   */
+      0x04
+        /* "#utility.yul":1512:1527   */
+      mstore
+        /* "#utility.yul":1546:1550   */
+      0x24
+        /* "#utility.yul":1543:1544   */
+      0x00
+        /* "#utility.yul":1536:1551   */
+      revert
+        /* "#utility.yul":1563:1754   */
+    tag_42:
+        /* "#utility.yul":1603:1606   */
+      0x00
+        /* "#utility.yul":1622:1642   */
+      tag_75
+        /* "#utility.yul":1640:1641   */
+      dup3
+        /* "#utility.yul":1622:1642   */
+      tag_47
+      jump	// in
+    tag_75:
+        /* "#utility.yul":1617:1642   */
+      swap2
+      pop
+        /* "#utility.yul":1656:1676   */
+      tag_76
+        /* "#utility.yul":1674:1675   */
+      dup4
+        /* "#utility.yul":1656:1676   */
+      tag_47
+      jump	// in
+    tag_76:
+        /* "#utility.yul":1651:1676   */
+      swap3
+      pop
+        /* "#utility.yul":1699:1700   */
+      dup3
+        /* "#utility.yul":1696:1697   */
+      dup3
+        /* "#utility.yul":1692:1701   */
+      add
+        /* "#utility.yul":1685:1701   */
+      swap1
+      pop
+        /* "#utility.yul":1720:1723   */
+      dup1
+        /* "#utility.yul":1717:1718   */
+      dup3
+        /* "#utility.yul":1714:1724   */
+      gt
+        /* "#utility.yul":1711:1747   */
+      iszero
+      tag_77
+      jumpi
+        /* "#utility.yul":1727:1745   */
+      tag_78
+      tag_54
+      jump	// in
+    tag_78:
+        /* "#utility.yul":1711:1747   */
+    tag_77:
+        /* "#utility.yul":1563:1754   */
+      swap3
+      swap2
+      pop
+      pop
+      jump	// out
+        /* "#utility.yul":1760:1993   */
+    tag_44:
+        /* "#utility.yul":1799:1802   */
+      0x00
+        /* "#utility.yul":1822:1846   */
+      tag_80
+        /* "#utility.yul":1840:1845   */
+      dup3
+        /* "#utility.yul":1822:1846   */
+      tag_47
+      jump	// in
+    tag_80:
+        /* "#utility.yul":1813:1846   */
+      swap2
+      pop
+        /* "#utility.yul":1868:1934   */
+      0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+        /* "#utility.yul":1861:1866   */
+      dup3
+        /* "#utility.yul":1858:1935   */
+      sub
+        /* "#utility.yul":1855:1958   */
+      tag_81
+      jumpi
+        /* "#utility.yul":1938:1956   */
+      tag_82
+      tag_54
+      jump	// in
+    tag_82:
+        /* "#utility.yul":1855:1958   */
+    tag_81:
+        /* "#utility.yul":1985:1986   */
+      0x01
+        /* "#utility.yul":1978:1983   */
+      dup3
+        /* "#utility.yul":1974:1987   */
+      add
+        /* "#utility.yul":1967:1987   */
+      swap1
+      pop
+        /* "#utility.yul":1760:1993   */
+      swap2
+      swap1
+      pop
+      jump	// out
+
+    auxdata: 0xa2646970667358221220f9f928627bde7a21ca14f0db6c18961a305d0dc5ce5f08878dc943c1de2fde5564736f6c637827302e382e31362d646576656c6f702e323032322e382e372b636f6d6d69742e34396132646239390058
+}
